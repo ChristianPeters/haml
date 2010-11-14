@@ -509,6 +509,11 @@ MSG
           @options[:for_engine][:attr_wrapper] = '"'
         end
 
+        opts.on('-o', '--object-ref-format FORMAT',
+                'Separator format for the object reference operator "[]". Can be underscore (default) or hyphen.') do |format|
+          @options[:for_engine][:object_ref_format] = format.to_sym
+        end
+
         opts.on('-r', '--require FILE', "Same as 'ruby -r'.") do |file|
           @options[:requires] << file
         end

@@ -84,6 +84,7 @@ module Haml
         :ugly => false,
         :format => :xhtml,
         :escape_html => false,
+        :object_ref_format => :underscore
       }
 
 
@@ -294,6 +295,7 @@ module Haml
         :format => @options[:format],
         :encoding => @options[:encoding],
         :escape_html => @options[:escape_html],
+        :object_ref_format => @options[:object_ref_format]
       }
     end
 
